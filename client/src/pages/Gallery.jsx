@@ -24,7 +24,7 @@ const Gallery = () => {
   const fetchImagesApi = async (nextCursor) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/api/get-images?search=${query}&per_page=10&next_cursor=${nextCursor}`,
+        `https://drey-mide.onrender.com/api/get-images?search=${query}&per_page=10&next_cursor=${nextCursor}`,
         {
           headers: {
             Authorization: import.meta.env.VITE_API_KEY,
